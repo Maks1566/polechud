@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>5 задание - Поле чудес</title>
+	<style type="text/css">
+		/* Главный див */
+		.container {
+			width: 600px;
+		}
+		/* класс для правильной буквы 1 */
+		.letter1 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 2 */
+		.letter2 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 3 */
+		.letter3 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 4 */
+		.letter4 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 5 */
+		.letter5 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* класс для правильной буквы 6 */
+		.letter6 {
+			background: black;
+			border: 1px solid #dee2e6;
+			height: 100px;
+			width: 100px;
+		}
+		/* авт. отступы */
+		.mx-auto {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		/* DISPLAY FLEX */
+		.d-flex {
+			display: flex;
+		}
+		/* ШРИФТ Arial */
+		.ff-arial {
+			font-family: Arial;
+		}
+		/* фон светло-серый, почти белый */
+		.bg-light {
+			background-color: #f8f9fa;
+		}
+		/* фон желтый */
+		.bg-warning {
+			background-color: #ffc107;
+		}
+		/* ведущий Якубович */
+		.yakubovich {
+			background-image: url(https://fatuidb.icu/images/upload/zhongli);
+			background-size: 100% 100%;
+			width: 400px;
+			height: 400px;
+			position: absolute;
+			left: 0px;
+			top: 400px;
+		}
+	</style>
+</head>
+<body class="ff-arial">
+	<!-- Вопрос -->
+	<div class="bg-warning container mx-auto">
+		Это своего рода катализатор, среда для физической транформации.
+	</div>
+	<!-- Главный див -->
+	<div class="container mx-auto d-flex bg-light">
+		<div class="letter1">
+			<h1>М</h1>
+		</div>
+		<div class="letter2">
+			<h1>О</h1>
+		</div>
+		<div class="letter3">
+			<h1>Р</h1>
+		</div>
+		<div class="letter4">
+			<h1>А</h1>
+		</div>
+	</div>
+	<!-- Добавьте классы для букв сами -->
+	<span class="p4">A</span>
+	<span class="n1">Б</span>
+	<span class="n2">В</span>
+	<span class="n11">Г</span>
+	<span class="n3">Д</span>		
+	<span class="n4">Е</span>	
+	<span class="n5">Ё</span>
+	<span class="n6">Ж</span>
+	<span class="n7">З</span>
+	<span class="n29">И</span>
+	<span class="n8">Й</span>
+	<span class="n9">К</span>
+	<span class="n10">Л</span>
+	<span class="p1">М</span>
+	<span class="n12">Н</span>
+	<span class="p2">О</span>
+	<span class="n14">П</span>
+	<span class="p3">Р</span>
+	<span class="n15">С</span>
+	<span class="n13">Т</span>
+	<span class="n16">У</span>
+	<span class="n17">Ф</span>
+	<span class="n18">Х</span>
+	<span class="n19">Ц</span>
+	<span class="n20">Ч</span>
+	<span class="n21">Ш</span>
+	<span class="n22">Щ</span>
+	<span class="n23">Ъ</span>
+	<span class="n24">Ы</span>
+	<span class="n25">Ь</span>
+	<span class="n26">Э</span>
+	<span class="n27">Ю</span>
+	<span class="n28">Я</span>
+	<!-- ведущий -->
+	<div class="yakubovich">
+	</div>
+	<script type="text/javascript">
+		/* Создай игру "Поле чудес".
+		1. Когда кликаешь на правильную букву алфавита, то открывается буква в слове.
+		2. Когда кликаешь на неправильную букву алфавита, то выходит всплывающее окно 'Неверно!'.
+		Вначале сделай, так чтобы работали клики на правильные буквы. Потом сделай, так чтобы работали клики на 1-2 неправильные буквы. На все 33 буквы алфавита, можно не делать. */
+		
+		let b1 = document.querySelector(".p1");
+		let b2 = document.querySelector(".p2");
+		let b3 = document.querySelector(".p3");
+		let b4 = document.querySelector(".p4");
+		b1.onclick = function(){
+			document.querySelector(".letter1").style.background = "yellow";
+		}
+		b2.onclick = function(){
+			document.querySelector(".letter2").style.background = "yellow";
+		}
+		b3.onclick = function(){
+			document.querySelector(".letter3").style.background = "yellow";
+		}
+		b4.onclick = function(){
+			document.querySelector(".letter4").style.background = "yellow";
+		}
+
+		document.querySelector(".n1").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n2").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n3").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n4").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n5").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n6").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n7").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n8").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n9").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n10").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n11").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n12").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n13").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n14").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n15").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n16").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n17").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n18").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n19").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n20").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n21").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n22").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n23").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n24").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n25").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n26").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n27").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n28").onclick = function(){
+			alert("Неверно")
+		}
+		document.querySelector(".n29").onclick = function(){
+			alert("Неверно")
+		}
+		
+
+	</script>
+</body>
+</html>
